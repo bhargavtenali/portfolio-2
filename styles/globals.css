@@ -16,7 +16,6 @@ span::selection {
   background-color: #6c97cf;
 }
 
-
 /* dark mode */
 .light {
   background-image: linear-gradient(to right, #aeaeae, #e8e8e8, #ffff);
@@ -726,7 +725,7 @@ textarea::placeholder {
 
 .personal-btn:hover {
   color: black;
-  text-shadow: 0 2px 6px #000;
+  /* text-shadow: 0 2px 6px #000; */
 }
 .personal-btn:hover::before {
   border-radius: 10px;

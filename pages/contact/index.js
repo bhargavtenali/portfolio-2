@@ -3,6 +3,7 @@
 
 //icons
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
 
 //framer
 import { motion } from "framer-motion";
@@ -106,6 +107,11 @@ const Contact = () => {
                 target="_blank"
               >
                 <BsLinkedin />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:bhargavtenali@gmail.com" target="_blank">
+                <IoIosMail />
               </a>
             </li>
             <li>

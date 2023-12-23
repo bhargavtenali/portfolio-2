@@ -126,10 +126,27 @@ export const aboutData = [
       {
         title: "Python Bootcamp from Zero to Hero",
         stage: "Jan - 2022",
+        link: "https://www.udemy.com/certificate/UC-d7803210-626e-4620-9dd4-f035fdf23abc/",
       },
       {
         title: "Web Development Bootcamp",
         stage: "Nov - 2021",
+        link: "https://www.udemy.com/certificate/UC-379b041e-02d0-4350-9000-6063c670e940/",
+      },
+      {
+        title: "HTML for Web Development",
+        stage: "Oct - 2021",
+        link: "https://olympus1.mygreatlearning.com/course_certificate/XMCBXSAK",
+      },
+      {
+        title: "CSS for Web Development",
+        stage: "Nov - 2021",
+        link: "https://olympus1.mygreatlearning.com/course_certificate/KIFSQYTX",
+      },
+      {
+        title: "Javascript",
+        stage: "Nov - 2021",
+        link: "https://olympus1.mygreatlearning.com/course_certificate/WAFNIANJ",
       },
     ],
   },
@@ -172,12 +189,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0 font-sans font-semibold text-shad-sm"
           >
-            I am a dedicated Full Stack Web Developer with a strong background
-            in Python, React JS, Node JS, and SQL databases.
+            I am a dedicated Full Stack Web Developer.
             <br /> With a passion for continuous learning and a commitment to
             delivering high-quality solutions, I am excited to contribute to web
-            development projects. Also, I have actively contributed to the
-            open-source community
+            development projects. <br />
+            Also, I have actively contributed to the open-source community
           </motion.p>
           {/* counters */}
           <motion.div
@@ -277,9 +293,19 @@ const About = () => {
                   <div className="font-bold mb-2 md:mb-0 text-sky-600 ">
                     {item.desc}
                   </div>
-                  <div className="font-bold mb-2 md:mb-0 text-sky-600 ">
-                    {item.title}
-                  </div>
+                  {item.link ? (
+                    <a
+                      target="_blank"
+                      href={item.link}
+                      className="z-50 font-bold mb-2 md:mb-0 text-sky-600 "
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    <div className="font-bold mb-2 md:mb-0 text-sky-600 ">
+                      {item.title}
+                    </div>
+                  )}
                   <div className="hidden md:flex ">-</div>
 
                   <div>{item.stage}</div>

@@ -45,7 +45,7 @@ const Nav = () => {
             >
               {/* tooltip */}
               <div className="transition-all duration-100 absolute pr-14 right-0 hidden xl:group-hover:flex ">
-                <div className="shadow-xl shadow-black bg-gradient-to-r from-sky-900 via-sky-500 to-sky-600 relative flex items-center text-white p-[10px] rounded-[10px]">
+                <div className="bg-gradient-to-r from-sky-900 via-sky-500 to-sky-600 relative flex items-center text-white p-[10px] rounded-[10px]">
                   <div className="text-[14px] leading-none font-semibold capitalize ">
                     {link.name}
                   </div>
