@@ -33,7 +33,10 @@ const Projects = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-shad-sm"
             >
-            Explore my latest projects showcasing my web and software development skills. From sleek websites to complex applications, I create innovative solutions that meet user needs
+              Explore my latest projects showcasing my software development
+              skills.
+              <br /> From sleek websites to complex applications, I create
+              innovative solutions that meet user needs
             </motion.p>
           </div>
           <motion.div

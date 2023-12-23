@@ -6,13 +6,36 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaSass,
+  FaNode,
+  FaCode,
+  FaPython,
+  FaDocker,
+  FaJenkins,
 } from "react-icons/fa";
-import { SiNextdotjs, SiJira } from "react-icons/si";
-import { BiHappyHeartEyes, BiSupport, BiLogoTailwindCss } from "react-icons/bi";
+import { FaGitlab } from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
+import {
+  SiTypescript,
+  SiMui,
+  SiMysql,
+  SiElastic,
+  SiRedux,
+  SiExpress,
+  SiFlask,
+  SiKubernetes,
+  SiPostgresql,
+  SiMongodb,
+} from "react-icons/si";
+import { PiCertificateBold } from "react-icons/pi";
+import { TbSql } from "react-icons/tb";
+import {
+  BiLogoTailwindCss,
+  BiBriefcase,
+  BiLogoPostgresql,
+} from "react-icons/bi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { BsGit, BsGithub } from "react-icons/bs";
+import { BsGit } from "react-icons/bs";
 
 //framer-motion
 import { motion } from "framer-motion";
@@ -21,30 +44,50 @@ import { fadeIn } from "../../variants";
 //counter
 import CountUp from "react-countup";
 
-
-
 // About data
 export const aboutData = [
   {
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Frontend",
 
         icons: [
+          <FaJs />,
+          <SiTypescript />,
+          <FaReact />,
+          <SiRedux />,
           <FaHtml5 />,
           <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <BiLogoTailwindCss />,
           <FaSass />,
-          <FaWordpress />,
+          <BiLogoTailwindCss />,
+          <SiMui />,
         ],
       },
       {
-        title: "Software Development Tools",
-        icons: [<BsGit />, <BsGithub />, <SiJira />],
+        title: "Backend",
+
+        icons: [
+          <FaNode />,
+          <SiExpress />,
+          <SiTypescript />,
+          <FaPython />,
+          <SiFlask />,
+        ],
+      },
+      {
+        title: "Devops",
+        icons: [
+          <FaDocker />,
+          <SiKubernetes />,
+          <FaJenkins />,
+          <BsGit />,
+          <FaGitlab />,
+        ],
+      },
+      {
+        title: "Database",
+        icons: [<TbSql />, <SiElastic />, <SiPostgresql />, <SiMongodb />],
       },
     ],
   },
@@ -53,12 +96,16 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Web Developer, Freelancer - Upwork",
-        stage: "2023 - present",
+        title: "Full Stack Developer, Kayrros",
+        stage: "Aug 2022 - Present",
       },
       {
-        title: "Software Application Support - Izam",
-        stage: "2022 - 2023",
+        title: "Web Developer Intern, NxtWave",
+        stage: "Feb 2022 - Aug 2022",
+      },
+      {
+        title: "Manager - Government of India",
+        stage: "2017 - 2022",
       },
     ],
   },
@@ -66,14 +113,9 @@ export const aboutData = [
     title: "education",
     info: [
       {
-        desc: "Web Design Deploma",
-        title: "From:  NTI",
-        stage: "May - June 2023 ",
-      },
-      {
-        desc: "Bachelor of Computer Science",
-        title: "From: MUST UNIVERSITY",
-        stage: "2013 - 2019",
+        desc: "Bachelor of Technology",
+        title: "IIT, Varanasi",
+        stage: "2013 - 2017",
       },
     ],
   },
@@ -82,12 +124,12 @@ export const aboutData = [
     title: "certifications",
     info: [
       {
-        title: "Web Development - NTI",
-        stage: "June - 2023",
+        title: "Python Bootcamp from Zero to Hero",
+        stage: "Jan - 2022",
       },
       {
-        title: "Web Development Challenger Nanodegree - Udacity",
-        stage: "March - 2023",
+        title: "Web Development Bootcamp",
+        stage: "Nov - 2021",
       },
     ],
   },
@@ -106,10 +148,10 @@ const About = () => {
 
   return (
     <div className="h-full py-24 xl:py-32 text-center xl:text-left">
-                  {/* background image */}
-                  <div
-  className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.25] z-0`}
-></div>
+      {/* background image */}
+      <div
+        className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.25] z-0`}
+      ></div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
@@ -130,11 +172,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0 font-sans font-semibold text-shad-sm"
           >
-            
-            Iam a detail-oriented and ambitious front-end web developer eager to
-            leverage my Bachelor of Information Technology degree in Computer
-            Science and recent experience participating in various coding
-            programs towards supporting business web development needs.
+            I am a dedicated Full Stack Web Developer with a strong background
+            in Python, React JS, Node JS, and SQL databases.
+            <br /> With a passion for continuous learning and a commitment to
+            delivering high-quality solutions, I am excited to contribute to web
+            development projects. Also, I have actively contributed to the
+            open-source community
           </motion.p>
           {/* counters */}
           <motion.div
@@ -144,26 +187,26 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-4"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1">
               {/* clents */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 px-8">
                 <div className="text-2xl xl:text-4xl font-extrabold text-shad-sm text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
-                    <BiHappyHeartEyes className="mr-1 flex-1 shadow" />
-                    <CountUp start={0} end={255} duration={10} />
+                    <BiBriefcase className="mr-1 flex-1 shadow" />
+                    <CountUp start={0} end={2} duration={20} />
                   </div>
                   <div className="text-xs uppercase text-center tracking-[1px] loading-[1.4] max-w-[100px]">
                     <br />
-                    Happy Clients
+                    Work Experience
                   </div>
                 </div>
               </div>
               {/* finish Projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 px-8">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
                     <AiOutlineFundProjectionScreen className="mr-1 flex-1 shadow" />
-                    <CountUp start={0} end={15} duration={10} />
+                    <CountUp start={0} end={30} duration={10} />
                   </div>
                   <div className="text-xs uppercase  text-center tracking-[1px] loading-[1.4]  max-w-[100px]">
                     <br />
@@ -172,16 +215,27 @@ const About = () => {
                 </div>
               </div>
               {/* Support*/}
-
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 px-8">
                 <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
                   <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
-                    <BiSupport className="mr-1 flex-1" />
-                    <CountUp start={0} end={877} duration={10} />
+                    <PiCertificateBold className="mr-1 flex-1" />
+                    <CountUp start={0} end={20} duration={10} />
                   </div>
                   <div className="text-xs uppercase  text-center tracking-[1px] loading-[1.4] max-w-[100px]">
                     <br />
-                    Hours Of Support
+                    Web Certifications
+                  </div>
+                </div>
+              </div>
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 px-8">
+                <div className="text-2xl xl:text-4xl font-extrabold text-center mb-2 flex items-center flex-col ">
+                  <div className="text-sky-600 text-center flex items-center flex-col text-shad-sm">
+                    <FaCode className="mr-1 flex-1" />
+                    <CountUp start={0} end={2} duration={20} />
+                  </div>
+                  <div className="text-xs uppercase  text-center tracking-[1px] loading-[1.4] max-w-[100px]">
+                    <br />
+                    Open Source Contributions
                   </div>
                 </div>
               </div>
@@ -246,10 +300,8 @@ const About = () => {
               );
             })}
           </div>
-          
         </motion.div>
       </div>
-      
     </div>
   );
 };

@@ -78,7 +78,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Mohamed Saied,
+            Bhargav Tenali,
           </motion.h2>
           <motion.div
             variants={fadeIn("right", 1.5)}
@@ -100,9 +100,10 @@ const Home = () => {
                     strings: [
                       "",
                       "",
-                      "Web Developer",
-                      "Software Implementor",
-                      "Freelancer",
+                      "Back End Developer",
+                      "Front End Develope",
+                      "Full Stack Web Developer",
+                      "Experienced SDE",
                     ],
                     autoStart: true,
                     loop: true,
@@ -127,20 +128,20 @@ const Home = () => {
             </button>
           </motion.a>
           <div className="flex xl:justify-start justify-end xl:flex-row gap-y-6 ">
-          <motion.a
-  href="https://drive.google.com/file/d/1Qc6oZtFeEeelG3qdSOW3vuYcsYA4812K/view?usp=sharing"
-  download="your-cv-name.pdf"
-  className="z-20 pl-10 md:pl-0"
-  target="_blank"
-  variants={fadeIn("right", 2.5)}
-  initial="hidden"
-  animate="show"
-  exit="hidden"
->
-  <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">
-    My CV
-  </button>
-</motion.a>
+            <motion.a
+              href="https://drive.google.com/file/d/1Qc6oZtFeEeelG3qdSOW3vuYcsYA4812K/view?usp=sharing"
+              download="your-cv-name.pdf"
+              className="z-20 pl-10 md:pl-0"
+              target="_blank"
+              variants={fadeIn("right", 2.5)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+            >
+              <button className="personal-btn h-[35px] w-[120px] lg:h[45px] lg:w-[130px]">
+                My CV
+              </button>
+            </motion.a>
             <motion.a
               href="/contact"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-10 z-20 "

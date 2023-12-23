@@ -2,7 +2,7 @@
 // import Circles from "/components/Circles";
 
 //icons
-import { BsArrowRight } from "react-icons/bs";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 //framer
 import { motion } from "framer-motion";
@@ -38,10 +38,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_r1vdo4s",
-        "template_1i6wu1p",
+        "service_ugmjr4b",
+        "template_w5g3tca",
         form.current,
-        "Z4aBCM13L0jr9p2kd"
+        "IxFVrwLzLR8GusV9s"
       )
       .then(
         (result) => {
@@ -65,10 +65,10 @@ const Contact = () => {
       <div>
         <ParticlesContainer />
       </div>
-          {/* background image */}
-          <div
-  className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.15] z-0`}
-  ></div>
+      {/* background image */}
+      <div
+        className={`bg-about bg-cover bg-right bg-no-repeat w-full h-full absolute left-0 top-0 opacity-[.15] z-0`}
+      ></div>
       <div className="container mx-auto  text-center xl:text-left flex flex-wrap items-center justify-center h-full ">
         {/* contact info */}
         <motion.div
@@ -83,42 +83,38 @@ const Contact = () => {
           </h3>
           <p className="xl:mb-2 text-sm xl:text-md mt-4">
             <FaEnvelope className=" inline-block mr-2" />
-            Email:&nbsp;&nbsp; mohamedsaid2994@gmail.com
+            Email:&nbsp;&nbsp; bhargavtenali@gmail.com
           </p>
           <p className="xl:mb-2 text-sm xl:text-md">
             <FaMapMarkerAlt className="inline-block mr-2" />
-            Location: &nbsp;&nbsp;Cairo, EGYPT
+            Location: &nbsp;&nbsp;Bengaluru, INDIA
           </p>
           <p className="xl:mb-2 text-sm xl:text-md">
             <FaPhone className="inline-block mr-2" />
-            Phone: &nbsp;&nbsp;+2
-            &nbsp;&nbsp;111&nbsp;&nbsp;39&nbsp;&nbsp;599&nbsp;&nbsp;79
+            Phone: &nbsp;&nbsp;+91 &nbsp;&nbsp;93985&nbsp;&nbsp;66627
           </p>
 
           <ul className="flex gap-x-4 text-md xl:text-2xl relative mt-4 mb-8 justify-center xl:justify-start">
             <li>
-              <a href="https://github.com/mohamedsaied22" target="_blank">
+              <a href="https://github.com/bhargavtenali" target="_blank">
                 <BsGithub />
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/mohamed-saied-507b29216/"
+                href="https://www.linkedin.com/in/bhargavtenali/"
                 target="_blank"
               >
                 <BsLinkedin />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.facebook.com/mohamed.l.karar/"
-                target="_blank"
-              >
-                <BsFacebook />
+              <a href="tel:+91-93985-66627" target="_blank">
+                <BsFillTelephoneFill />
               </a>
             </li>
             <li>
-              <a href="https://wa.me/201113959979" target="_blank">
+              <a href="https://wa.me/919398566627" target="_blank">
                 <BsWhatsapp />
               </a>
             </li>
@@ -134,7 +130,8 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-2xl xl:text-[36px] mt-[-200px] lg:mt-0 mb-4 xl:mb-12 text-center text-shad-sm"
           >
-          Lets<span className="text-cyan-600 text-shad-sm pt-4">Connect.</span> 
+            Lets
+            <span className="text-cyan-600 text-shad-sm pt-4">Connect.</span>
           </motion.h2>
           {/* form */}
           <motion.form
