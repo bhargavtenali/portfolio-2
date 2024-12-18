@@ -26,10 +26,6 @@ export const workSlider = {
             "Developed a RESTful API backend with Node.js and Express, featuring authentication middleware. Utilized SQLite for efficient data management, including access, updates, and creation. Laid the foundation for a Twitter- like social media application.Technologies: Node.js, Express, SQLite, REST APIs",
           sourceCode: "https://github.com/bhargavtenali/backend_twitter_clone",
         },
-      ],
-    },
-    {
-      images: [
         {
           title: "Money Manager",
           path: "/moneymanager.png",
@@ -38,6 +34,10 @@ export const workSlider = {
           link: "https://bhmoneymanager.ccbp.tech/",
           sourceCode: "https://github.com/bhargavtenali/frontend_moneyManager",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "Appointments App",
           path: "/appointment.png",
