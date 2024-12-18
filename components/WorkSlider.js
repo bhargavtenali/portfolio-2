@@ -4,14 +4,6 @@ export const workSlider = {
     {
       images: [
         {
-          title: "Axa Wildfire Risk Monitor App",
-          path: "/axa.png",
-          description:
-            "Single-handedly built the Axa-app (Wildfire France 2023) from the ground up, including writing YAML deployment files and designing responsive frontend UI for both mobile and desktop.Earned commendable feedback from the Product Manager and the customer (Axa) for the exceptional quality of the delivered app.",
-          note: "Note: For your safety, you may use a fake Email / Company name / Company size in the form and click CHECK YOUR LOCATION to view the application.",
-          link: "https://smartservices.axaxl.com/wildfire",
-        },
-        {
           title: "Nxt Trendz ( ECommerce Clone - Amazon, Flipkart",
           path: "/nxttrendz.png",
           description:
